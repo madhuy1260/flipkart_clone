@@ -3,7 +3,7 @@ import axios from "axios";
 import {
   ADD_TO_CART,
   REMOVE_FROM_CART,
-  CART_RESET,
+  // CART_RESET,
   ADD_TO_CART_ERROR,
 } from "../constants/cartConstants";
 

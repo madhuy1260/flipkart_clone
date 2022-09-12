@@ -40,6 +40,7 @@ function TotalView({ CartItems }) {
     let price = 0,
       discount = 0;
 
+    // eslint-disable-next-line array-callback-return
     CartItems.map((item) => {
       price += item.price.mrp;
       discount += item.price.mrp - item.price.cost;
@@ -50,7 +51,8 @@ function TotalView({ CartItems }) {
 
   useEffect(() => {
     totalAmount();
-  }, [CartItems]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <Box>
